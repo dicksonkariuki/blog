@@ -18,7 +18,7 @@ def create_app(config_name):
 
 # Creating app configurations
     app.config.from_object(config_options[config_name])
-    # config_options[config_name].init_app(app)
+   
 
 
     # Initializing bootstrap
@@ -35,8 +35,6 @@ def create_app(config_name):
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint,url_prefix = '/authenticate')
 
-    # Initializing the login manager
-    # login_manager.init_app(app)
 
 
     return app
