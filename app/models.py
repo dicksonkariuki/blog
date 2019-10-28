@@ -36,6 +36,18 @@ class Post(db.model):
     __tablename__ = 'post'
 
     post_list = []
-    
+
+    id = db.Column(db.Integer,primary_key =True)
+    actual_post = db.Column(db.String(255))
+    vote_count = db.Column(db.String(255))
+    category = db.Column(db.string(255))
+    timestamp = db.Column(db.Datetime,index = True,default = datetime.utcnow)
+    user_id = db.Column (db.Integer,db.ForeignKey('users_id'))
+    post = db.relationship('Comment', backref = 'post',lazy = "dynamic")
+
+    def save_post(self):
+        """
+        Function that saves the post created by blogers
+        """
 
 
