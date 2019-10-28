@@ -4,9 +4,9 @@ class Config:
     '''
     This is the general configuration parent class
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:karis1234@localhost/bloger'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:karis300@localhost/bloger'
 
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SECRET_KEY = os.environ.get("SECRET_KEY")
 
 
     # Email configurations
