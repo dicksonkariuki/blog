@@ -1,0 +1,8 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html as wtf'%}
+
+{% block content %}
+<h4>Create your blog post here</h4>
+{{wtf.quick_form(form)}}
+
+{% for post in post%}
