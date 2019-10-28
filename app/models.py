@@ -2,6 +2,7 @@ from flask_login import UserMixin
 from . import login_manager
 from datetime import datetime
 from werkzeug.security import generate_password_hash,check_password_hash
+
 class User(UserMixin db.model):
     __tablename__ = 'users'
     """
@@ -24,4 +25,17 @@ class User(UserMixin db.model):
     
     def verify_password(self,password):
     return check_password_hash(self.password_hash,password)
-    def
+
+    def __repr__(self):
+        return f'User {self.username}'
+
+class Post(db.model):
+    """
+    Post class that defines post tables in the database
+    """
+    __tablename__ = 'post'
+
+    post_list = []
+    
+
+
