@@ -6,7 +6,7 @@ class UserModelTest(unittest.TestCase):
     '''
 
     def setUp(self):
-        self.new_user = User(password = 'samsam')
+        self.new_user = User(password = 'karis300')
         '''
         This creates an instance of the User class object and passes in a password property to be verified
         '''
@@ -22,7 +22,7 @@ class UserModelTest(unittest.TestCase):
                 self.new_user.password
 
     def test_password_verification(self):
-        self.assertTrue(self.new_user.verify_password('samsam'))
+        self.assertTrue(self.new_user.verify_password('karis300'))
         '''
         This verifies that the password that users input is verifiable with the hashed password
         '''

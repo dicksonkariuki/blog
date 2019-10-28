@@ -9,7 +9,7 @@ class TestComment(unittest.TestCase):
     '''
 
     def setUp(self):
-        self.user_sam = User(username = 'Sam',password = 'samsam', email = 'sam@gmail.com')
+        self.user_dickson = User(username = 'dickson',password = 'kiriu300', email = 'dicksonkariuki4@gmail.com')
         self.new_comment = Comment(pitch_id=9,pitch_title='i love codes',comment='This post is dope',user = self.user_sam )
 
 
@@ -24,7 +24,7 @@ class TestComment(unittest.TestCase):
         self.assertEquals(self.new_comment.pitch_id,9)
         self.assertEquals(self.new_comment.pitch_title,'Review for movies')
         self.assertEquals(self.new_comment.comment,'Not a bad pitch')
-        self.assertEquals(self.new_comment.user,self.user_sam)
+        self.assertEquals(self.new_comment.user,self.user_dickson)
 
 
     def test_save_comment(self):
