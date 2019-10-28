@@ -22,6 +22,11 @@ def index():
     General = Post.query.filter_by(category='General')
     Cars = Post.query.filter_by(category='Cars')
     Technology = Post.query.filter_by(category='Technology')
+    Lifestyle = Post.query.filter_by(category='Lifestyle')
+    Agriculture = Post.query.filter_by(category='Agriculture')
+    Finance = Post.query.filter_by(category='Finance')
+    Health = Post.query.filter_by(category='Health')
+    Tourism= Post.query.filter_by(category='Tourism')
     return render_template('index.html',title = 'new_post',form=form, General=General, post=post, Cars=Cars, Technology=Technology)
 
 @main.route('/post/comments/new/<int:id>', methods = ['GET','POST'])
