@@ -49,5 +49,11 @@ class Post(db.model):
         """
         Function that saves the post created by blogers
         """
+        db.session.add()
+        db.session.commit()
+class Comment(db.model):
+    """
+    Comment class that defines comment tables in the database
+    """
 
 
