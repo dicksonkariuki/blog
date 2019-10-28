@@ -1,4 +1,5 @@
-class User(db.model):
+from flask_login import UserMixin
+class User(UserMixin db.model):
     __tablename__ = 'users'
     """
     A user class that defines the user class and its objects
