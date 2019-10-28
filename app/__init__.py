@@ -16,3 +16,5 @@ from app import views
 #setting up the configuration
 # initializing flask extensions
 bootstrap = Bootstrap(app)
+bootstrap.init_app(app)
+login_manager.init_app(app)
