@@ -63,4 +63,11 @@ class Comment(db.model):
     timestamp = db.Column(db.Datetime,index = True,default = datetime.utcnow)
     post_id = db.Column(db.Integer,db.ForeignKey('post.id'))
 
+        def delete_comment(self):
+            """
+            Function to delete post comments
+            """
+            db.session.delete()
+            db.session.commit()
+
 
