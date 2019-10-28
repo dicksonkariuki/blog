@@ -55,5 +55,12 @@ class Comment(db.model):
     """
     Comment class that defines comment tables in the database
     """
+    __tablename__ = 'comments'
+
+    id = db.Column(db.Integer,primary_key = True)
+    comments =db.Column(db.String(255))
+    user_id = db.Column(db.Integer,db.ForeignKey('users_id'))
+    timestamp = db.Column(db.Datetime,index = True,default = datetime.utcnow)
+    post_id = db.Column(db.Integer,db.ForeignKey('post.id'))
 
 
