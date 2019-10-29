@@ -16,6 +16,12 @@
 | Create blog | blog category and content   |  Created blogs displayed in descending order|
 |  Comment             |    A comment message          | The inputed comment message    |
 |Delete message         |   Press the delete button      |       |An empty comments section
+## Setup Instructions
+* You can fork or clone the repository to your machine.
+* Visit the requirements file and install all the requirements
+* Activate the start.sh file using:chmod a+x start.sh command
+* Run your application locally using ./start.sh
+
 ## Known bugs
 * Currently when unregistered user tries to post a blog gets an error.
 
