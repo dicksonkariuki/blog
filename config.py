@@ -6,7 +6,7 @@ class Config:
     '''
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:karis300@localhost/bloger'
 
-    SECRET_KEY = os.environ.get("SECRET_KEY")
+    SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
     # Email configurations
@@ -21,11 +21,11 @@ class ProdConfig(Config):
     '''
     This is the production configuration child class
     '''
-    pass
-
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    
 
 class DevConfig(Config):
-    DEBUG = True
+    DEBUG =True
 
 config_options = {
 'development':DevConfig,
