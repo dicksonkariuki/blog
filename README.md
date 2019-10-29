@@ -11,11 +11,11 @@
 
 |   Behavior        | Input        | Output |
 | ------------- |:-------------:| -----:|
-| Register user      |email,username,password | Redirect to login page |
-| Login    |email,password    | Redirect to the homepage |
-| Create blog | blog category and content   |  Created blogs displayed in descending order|
-|  Comment             |    A comment message          | The inputed comment message    |
-|Delete message         |   Press the delete button      |       |An empty comments section
+| Register user      |email,username,password |Redirect to login page |
+| Login    |email,password    |Redirect to the homepage |
+| Create blog | blog category and content   |Created blogs displayed in descending order|
+|  Comment             |A comment message          |The inputed comment message    |
+|Delete message         |Click the delete button      |Comments section with empty comments     |An empty comments section
 ## Setup Instructions
 * You can fork or clone the repository to your machine.
 * Visit the requirements file and install all the requirements
